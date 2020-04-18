@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock paper scissors</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Additional CSS file -->
+    <link rel="stylesheet" href="game-css/game.css">
+    <link rel="stylesheet" href="game-css/all.min.css">
+    <link rel="stylesheet" href="game-css/fontawesome.min.css">
+</head>
+<body>
+	<nav>
+		<input type="checkbox" id="check">
+		<label for = "check" class="check-btn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<label class= "logo">Happy X</label>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#"  class="active" >My score</a></li>
+			<li><a href="#">Best player</a></li>
+			<li><a href="#">About me</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+
+	<section class="game-1">
+		<div class="score-container">
+			<span class="user">YOU</span>
+			<span id="score"></span>
+			<span class="katy">KATY</span>
+		</div>
+		<div class="buttons">
+			<button id="paper" class="bn" onclick="game(this.value)" value="paper"><i class="far fa-hand-paper"></i></button>
+			<button id="rock" class="bn" onclick="game(this.value)" value="rock"><i class="far fa-hand-rock"></i></button>
+			<button id="scissors" class="bn" onclick="game(this.value)" value="scissors"><i class="far fa-hand-scissors"></i></button>
+		</div>
+
+		<div id="challenge">
+			<div id="you">
+				<div id="yourObject"></div>
+				<div class="who">You</div>
+			</div>
+			<div id="result"><p id="who"></p></div>
+			<div id="katy">
+				<div id="katyObject"></div>
+				<div class="who">Katy</div>
+			</div>
+		</div>
+		<!-- <div class="result-noti">
+			<p>You won</p>
+			<p>5-3</p>
+		</div> -->
+	</section>
+
+	<script type="text/javascript" src="game-js/game-1.js"></script>
+</body>
+</html>
